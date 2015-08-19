@@ -3,10 +3,9 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users
   resources :products do
-    resources :comments
+  resources :comments
   end
-  resources :payments, only: [:create]
-      
+  resources :payments, only: [:create]    
   resources :orders, only: [:index, :show, :new, :create]
   resources :charges
 
