@@ -283,3 +283,83 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-08-18 22:12:04 -0400
+
+
+Started GET "/" for ::1 at 2015-08-18 22:27:20 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 514ms (Views: 492.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-18 22:37:27 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 407ms (Views: 387.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/charges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/comments.self-648b9be5c4f8fee1f5e93d95753d49da27c29072bba875de0bfcdedea31b5ec0.css?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/jquery.raty.self-87ed0aee892c20d60b699b233626d04034355bea2c9d0d27b7586c39cb9ba493.css?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/products.self-3ece5c4f8746ae4816befe3f8f85c9be64b0fa1ffe374df888bbb2c1e8c6bc2e.css?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/scaffolds.self-fbcdaddf9d059c73e12042f78f216774401258aba686d18b4de3da015c947452.css?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/news.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/static_pages.self-604a8fb02615e20bcb3d88a452384568761d82d2e06aa6196c22e2b4f8ce27b6.css?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/application.self-8256eff73c135417ee7e0a524b2213ae3930e98b46dbbbaea023992b095f26b7.css?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/jquery.raty.self-628421be04f36f7a8fa8b9b884c6d7824d6f8bdeba4f172b131f15aa63f713e8.js?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/ratyrate.self-469679a2b4bc34e9ffda7cfd4e6e54a0dbf6ca0ac147ebedb1f6a589257ad7b5.js?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/news.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/site.self-f969bfc05a96738ba08fb08b02dfe2fc2790433782cc2c437f2a0097612b2000.js?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-18 22:37:28 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-08-18 22:37:28 -0400
