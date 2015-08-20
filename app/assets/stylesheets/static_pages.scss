@@ -13,8 +13,8 @@ p {
 	margin: 1em 10% 0 10%;
 	background-color: D3D3D3;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size: 1.4em;
- 	line-height: 1.6em;
+	font-size: 16px;
+ 	line-height: 150%;
 }
 .navbar li {
 	padding: 1em 1em 1em 0;
@@ -22,5 +22,7 @@ p {
 
 body {
 	margin: 10%;
+	font-size: 16px;
+	line-height: 150%;
 }
 
