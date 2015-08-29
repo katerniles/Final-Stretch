@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe Product, type: :model do 
 
-  context "name description, image URL, color, and price"
+  context "name, description, image URL, color, and price"
 
     before { @product = FactoryGirl.build(:product)}
   
