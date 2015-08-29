@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
-  resources :news
+
+  post '/rate' => 'rater#create', as => 'rate'
   devise_for :users
-  resources :users
+  resources :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
+
   resources :products do
-  resources :comments
+    resources :comments
   end
+  resources :users
+  
   resources :payments, only: [:create]    
   resources :orders, only: [:index, :show, :new, :create]
   resources :charges

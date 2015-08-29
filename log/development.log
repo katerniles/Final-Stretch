@@ -44205,3 +44205,12 @@ Processing by ChargesController#create as HTML
   Parameters: {"utf8"=>"✓", "authenticity_token"=>"XFKzos1qDkUnBo8rPe3L0fAuqef82CJaCU1bq0jo7NcO9+2sZ73u5UBgthoEeS8b/CGrpXh/zSfiRxatBHxekQ==", "stripeToken"=>"tok_16fDy3AnDtFdRmufwZD0JN13", "stripeTokenType"=>"card", "stripeEmail"=>"krussellnd@gmail.com"}
   Rendered charges/create.html.erb within layouts/charges (0.3ms)
 Completed 200 OK in 4461ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1 OFFSET 1
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1 OFFSET 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
