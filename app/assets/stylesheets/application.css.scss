@@ -27,8 +27,15 @@ p, body {
 	line-height: 150%;
 }
 table {
-	background-color: lightblue;
-	font-size: 1.2em;
+	background-color: lightgrey;
+	font-size: 1em;
+}
+th {
+	font-size: 1em;
+	padding-right: 1em;
+}
+td {
+	font-size: .75em;
 }
 .rated {
 	width: 150px;
