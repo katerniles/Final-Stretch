@@ -4,7 +4,7 @@
       <strong><%= @product.name %></strong>
     </p>
     <p>
-      Description: <%= @product.description %>
+      <%= @product.description %>
     </p>
     <p>
       Color: <%= @product.colour %>
@@ -13,16 +13,13 @@
     <%= image_tag @product.image_url, :data => { :action => "zoom"} %>
     </p>
     <p>
-      Price: $<%= @product.price %>
+      $<%= @product.price %>
     </p>
 <br>
     <p>
-      Average Rating: <div class="rated" data-score="<%= @product.average_rating %>">
-    </div></p>
+      <strong>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div></strong></p>
 
-<br/>
 <%= render 'new_comment' %>
-<br/>
 <%= render 'comments' %>
 <p> <%= will_paginate @comments %></p>
 
