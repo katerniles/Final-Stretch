@@ -1,9 +1,39 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-img {
-	width: 17%;
+
+.product-index {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-img.prod {
-	width: 25%;
+
+.product-table {
+  width: 100%;
+}
+.product-table th {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  border-bottom: 1px solid black;
+}
+
+.product-table td {
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  vertical-align: top; 
+  border-bottom: 1px solid black;
+}
+
+.table-responsive {
+  border: none;
+}
+
+.product-show {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.product-image img {
+  z-index: 1000;
+  width: 100%;
 }

@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.raty
+//= require jquery.min.js
 //= require ratyrate
 //= require_tree .
 

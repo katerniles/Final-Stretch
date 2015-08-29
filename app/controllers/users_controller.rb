@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
+  before_filter :authenticate_user!
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-   load_and_authorize_resource
+  load_and_authorize_resource
+
   # GET /users
   # GET /users.json
   def index
@@ -10,8 +12,6 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-
-    @user = User.find(params[:id])
   end
 
   # GET /users/new
@@ -27,8 +27,6 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(user_params)
-    @user = UserMailer.welcome_email(@user).deliver unless @user.invalid?
-    @user = User.find(params[:user][:user_id])
 
     respond_to do |format|
       if @user.save
@@ -67,7 +65,7 @@ class UsersController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_user
+    def user_params
       @user = User.find(params[:id])
     end
 
