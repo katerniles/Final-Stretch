@@ -1,13 +1,10 @@
 Rails.application.routes.draw do
-
+  resources :news
   devise_for :users
-  resources :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
-
-  resources :products do
-    resources :comments
-  end
   resources :users
-  
+  resources :products do
+  resources :comments
+  end
   resources :payments, only: [:create]    
   resources :orders, only: [:index, :show, :new, :create]
   resources :charges
