@@ -12,8 +12,8 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'krussellnd@gmail.com'
-config.secret_key = 'e55523b6a81cedeb4a386938556c41c1a9a48c9be55417e20ecf44ac4281c1023442f5f990506dc57de9e6943f0eccb2805433af53196d5e69f1de03a08ad90e'
+  config.mailer_sender = 'no-reply@krussellnd.herokuapp.com'
+  config.secret_key = 'e55523b6a81cedeb4a386938556c41c1a9a48c9be55417e20ecf44ac4281c1023442f5f990506dc57de9e6943f0eccb2805433af53196d5e69f1de03a08ad90e'
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
 
@@ -31,7 +31,7 @@ config.secret_key = 'e55523b6a81cedeb4a386938556c41c1a9a48c9be55417e20ecf44ac428
   # session. If you need permissions, you should implement that in a before filter.
   # You can also supply a hash where the value is a boolean determining whether
   # or not authentication should be aborted when the value is not present.
-  # config.authentication_keys = [:email]
+  config.authentication_keys = [:email]
 
   # Configure parameters from the request object used for authentication. Each entry
   # given should be a request method and it will automatically be passed to the
@@ -124,7 +124,7 @@ config.secret_key = 'e55523b6a81cedeb4a386938556c41c1a9a48c9be55417e20ecf44ac428
   config.reconfirmable = true
 
   # Defines which key will be used when confirming an account
-  # config.confirmation_keys = [:email]
+  config.confirmation_keys = [:email]
 
   # ==> Configuration for :rememberable
   # The time the user will be remembered without asking for credentials again.
@@ -186,7 +186,7 @@ config.secret_key = 'e55523b6a81cedeb4a386938556c41c1a9a48c9be55417e20ecf44ac428
   # ==> Configuration for :recoverable
   #
   # Defines which key will be used when recovering the password for an account
-  # config.reset_password_keys = [:email]
+  config.reset_password_keys = [:email]
 
   # Time interval you can reset your password with a reset password key.
   # Don't put a too small interval or your users won't have the time to
