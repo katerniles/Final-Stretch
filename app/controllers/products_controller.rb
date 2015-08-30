@@ -31,7 +31,6 @@ skip_authorize_resource :only => [:index, :show]
   # POST /products
   # POST /products.json
   def create
-    <% if signed_in? && current_user.admin? %>
     @product = Product.new(product_params)
 
     respond_to do |format|
