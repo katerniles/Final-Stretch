@@ -18,3 +18,4 @@
 //= require jquery.min.js
 
 //= require turbolinks
+//= require zoom
