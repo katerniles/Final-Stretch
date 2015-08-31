@@ -5,5 +5,4 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-	product = Product.create([{ name: 'Tree' }, { description: 'Oak' }, { image_url: '/images/oak.jpg' }, { colour: 'green' }])
 	User.create first_name: "Kate", last_name:"Russell",email:"krussellnd@gmail.com", admin:true, password:"password", password_confirmation: "password"
