@@ -73,6 +73,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
+    dalli (2.7.4)
     debug_inspector (0.0.2)
     devise (3.5.2)
       bcrypt (~> 3.0)
@@ -288,6 +289,7 @@ DEPENDENCIES
   cancancan
   capybara
   coffee-rails
+  dalli
   devise
   factory_girl_rails (~> 4.0)
   figaro
