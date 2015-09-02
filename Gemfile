@@ -42,6 +42,8 @@ group :development, :test do
   gem 'spork'
   gem 'byebug'
   gem 'dalli'
+  gem 'redis-rails'
+  
 #  gem 'brakeman', :require => false
     # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
