@@ -325,7 +325,6 @@ DEPENDENCIES
   ratyrate
   redis
   redis-rails
-  redis-store
   rolify
   rspec-rails
   sass-rails
