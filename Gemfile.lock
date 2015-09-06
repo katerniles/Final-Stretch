@@ -323,7 +323,9 @@ DEPENDENCIES
   rails
   rails_12factor
   ratyrate
+  redis
   redis-rails
+  redis-store
   rolify
   rspec-rails
   sass-rails
