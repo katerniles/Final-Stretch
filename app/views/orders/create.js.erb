@@ -1,0 +1,5 @@
+$(document).ajaxComplete(function() {
+	$('#notice').empty();
+	$('.order-i p').empty().append('<%= current_user.orders.length %>')
+	$('#notice').append('Added to cart');
+});

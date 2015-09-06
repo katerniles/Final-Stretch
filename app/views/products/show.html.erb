@@ -14,7 +14,9 @@
     </p>
     <p>
       $<%= @product.price %>
-    </p>
+      .ajax-button
+      = button_to 'Add to Basket', product_orders_path(@product), remote: true, class: 'add-to-order-btn'
+  </p>
 <br>
     <p>
       <strong>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div></strong></p>
