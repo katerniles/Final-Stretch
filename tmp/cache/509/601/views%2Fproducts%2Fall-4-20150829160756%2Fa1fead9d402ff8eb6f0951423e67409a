@@ -1,0 +1,54 @@
+o: ActiveSupport::Cache::Entry:@valueI"´  <h1>List of Products</h1>
+
+<div class="table-responsive">
+  <table class="product-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Image</th>
+        <th>Color</th>
+        <th>Price</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+  <td>jio;j;</td>
+  <td>Cute sign for the &quot;less than perfect&quot; home</td>
+  <td><img class="img-responsive img-product" alt="image not found" src="http://gooddealmama.com/wp-content/uploads/2013/02/good-moms.png" /></td>
+  <td>black on ivory</td>
+  <td>22.59</td>
+  <td><a href="/products/3">Show</a></td>
+  <td><a href="/products/3/edit">Edit</a></td>
+  <td><a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/products/3">Destroy</a></td>
+</tr><tr>
+  <td>Family</td>
+  <td>What better way to express family ...</td>
+  <td><img class="img-responsive img-product" alt="image not found" src="https://s-media-cache-ak0.pinimg.com/236x/ea/37/d8/ea37d8eb610e4c1a3c97be455134b541.jpg" /></td>
+  <td>Black on ivory</td>
+  <td>19.75</td>
+  <td><a href="/products/4">Show</a></td>
+  <td><a href="/products/4/edit">Edit</a></td>
+  <td><a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/products/4">Destroy</a></td>
+</tr><tr>
+  <td>Happy Place</td>
+  <td>What better place to be happy than where you are.</td>
+  <td><img class="img-responsive img-product" alt="image not found" src="https://img1.etsystatic.com/037/0/7995188/il_214x170.613174025_dp2i.jpg" /></td>
+  <td>Ivory on blue</td>
+  <td>17.95</td>
+  <td><a href="/products/5">Show</a></td>
+  <td><a href="/products/5/edit">Edit</a></td>
+  <td><a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/products/5">Destroy</a></td>
+</tr><tr>
+  <td>The Places ...</td>
+  <td>Who can say it better than Dr. Seuss?</td>
+  <td><img class="img-responsive img-product" alt="image not found" src="http://img2.etsystatic.com/il_570xN.282783790.jpg" /></td>
+  <td>Ivory on brown</td>
+  <td>18.95</td>
+  <td><a href="/products/6">Show</a></td>
+  <td><a href="/products/6/edit">Edit</a></td>
+  <td><a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/products/6">Destroy</a></td>
+</tr>
+:ET:@created_atf1441578458.651362:@expires_in0
