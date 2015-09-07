@@ -6,7 +6,7 @@ def index
 
   respond_to do |format|
     format.html #index.html.erb
-    format.json { render json: @payuments}
+    format.json { render json: @payments}
   end
 end
 
