@@ -13,8 +13,6 @@ Rails.application.routes.draw do
   
   get 'contact' => 'static_pages#contact'
 
-  get '/css/zoom.css' => '/css/zoom.css'
-  
   get 'index' => 'static_pages#index'
   
   get 'landing_page' => 'static_pages#landing_page'
