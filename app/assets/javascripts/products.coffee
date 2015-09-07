@@ -2,8 +2,8 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-(document).ready ->
+$(document).ready ->
    $("#new_payment").on("ajax:success", (e, data, status, xhr) ->
-    $("#new_payment").append "<p>Thank you!</p>"
+    $("#new_payment").append "<p>Payment Complete!</p>"
     ).on "ajax:error", (e, xhr, status, error) ->
-      $("#new_payment").append "<p>Oops! There's been a mistake somewhere.</p>"
+      $("#new_payment").append "<p>ERROR</p>"
