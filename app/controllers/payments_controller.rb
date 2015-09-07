@@ -37,7 +37,6 @@ if params[:saved_card] == 'false'
   customer.card = params[:payment][:stripe_token]
   customer.save
 end
-
 else
 customer = Stripe::Customer.create(
   :email => current_user.email,
@@ -45,7 +44,7 @@ customer = Stripe::Customer.create(
 )
 current_user.update_attribute(:stripe_customer_token, customer.id)
 end
-end
+
 charge = Stripe::Charge.create( charge_info.merge({ customer: customer.id }) )
 
 params[:payment][:user] = current_user
@@ -53,13 +52,10 @@ else
   format.html { render action: "new" }
   format.json { render json: @payment.errors, status: :unprocessable_entity }
 charge = Stripe::Charge.create( charge_info.merge({ card: params[:payment][:stripe_token] }) )
-
 end
 
 params[:payment][:stripe_token] = charge.id
-
 @payment = Payment.new(params[:payment])
-
 
 respond_to do |format|
 if @payment.save
@@ -69,9 +65,8 @@ else
   format.html { render action: "new" }
   format.json { render json: @payment.errors, status: :unprocessable_entity }
 end
-
+end
 rescue Stripe::InvalidRequestError => e
 redirect_to new_payment_path, notice: e.message
-end
 end
 end
