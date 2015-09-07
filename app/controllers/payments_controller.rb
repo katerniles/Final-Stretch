@@ -69,8 +69,9 @@ else
   format.html { render action: "new" }
   format.json { render json: @payment.errors, status: :unprocessable_entity }
 end
-end
+
 rescue Stripe::InvalidRequestError => e
 redirect_to new_payment_path, notice: e.message
+end
 end
 end
