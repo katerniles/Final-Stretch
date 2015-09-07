@@ -17,6 +17,7 @@ def create
   params[:payment][:user] = nil if params[:payment][:user] == ""
 
   respond_to do |format|
+
 if @payment.save
 format.html { redirect_to @payment, notice: 'Payment was successfully created.' }
 format.json { render json: @payment, status: :created, location: @payment }
@@ -71,5 +72,7 @@ end
 end
 rescue Stripe::InvalidRequestError => e
 redirect_to new_payment_path, notice: e.message
+end
+end
 end
 end
