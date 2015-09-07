@@ -69,4 +69,3 @@ end
 rescue Stripe::InvalidRequestError => e
 redirect_to new_payment_path, notice: e.message
 end
-end
