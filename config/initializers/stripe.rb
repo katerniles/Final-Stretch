@@ -9,8 +9,8 @@ if Rails.env.production?
 #  Rails.configuration.stripe = {
 #    :publishable_key => 'STRIPE_PUBLISHABLE_KEY',
 #    :secret_key      => 'STRIPE_SECRET_KEY'
-  :publishable_key => Rails.application.secrets.publishable_key,
-  :secret_key      => Rails.application.secrets.secret_key
+  :publishable_key => Rails.application.secrets.pk_test_key,
+  :secret_key      => Rails.application.secrets.sk_test_key
 }
 end
 
