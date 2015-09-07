@@ -45,7 +45,7 @@ customer = Stripe::Customer.create(
 )
 current_user.update_attribute(:stripe_customer_token, customer.id)
 end
-
+end
 charge = Stripe::Charge.create( charge_info.merge({ customer: customer.id }) )
 
 params[:payment][:user] = current_user
