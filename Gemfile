@@ -42,9 +42,7 @@ group :development, :test do
   gem 'spork'
   gem 'byebug'
   gem 'dalli' 
-  gem 'redis', '2.2.1'
-  gem 'redis-rails'
-  gem 'redis-store' 
+  gem "redis-store", "~> 1.0.0" 
 #  gem 'brakeman', :require => false
     # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
