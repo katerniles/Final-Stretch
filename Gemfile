@@ -42,7 +42,7 @@ group :development, :test do
   gem 'spork'
   gem 'byebug'
   gem 'dalli' 
-  gem 'redis'
+  gem 'redis', '2.2.1'
   gem 'redis-rails'
   gem 'redis-store' 
 #  gem 'brakeman', :require => false

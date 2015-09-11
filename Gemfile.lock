@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/stripe/stripe-ruby
-  revision: 5e3474c70cc4f140fe195fd51a5529ea8b23ca2f
+  revision: e09dab7d2eab98a50bf7295d6c0007ad77a9c6ae
   specs:
     stripe (1.25.0)
       json (~> 1.8.1)
@@ -202,8 +202,8 @@ GEM
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     rdoc (4.2.0)
-    redis (3.2.1)
-    redis-actionpack (4.0.0)
+    redis (2.2.1)
+    redis-actionpack (4.0.1)
       actionpack (~> 4)
       redis-rack (~> 1.5.0)
       redis-store (~> 1.1.0)
@@ -267,7 +267,7 @@ GEM
     spring (1.3.6)
     sprockets (3.3.4)
       rack (~> 1.0)
-    sprockets-rails (2.3.2)
+    sprockets-rails (2.3.3)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
@@ -323,7 +323,7 @@ DEPENDENCIES
   rails
   rails_12factor
   ratyrate
-  redis
+  redis (= 2.2.1)
   redis-rails
   redis-store
   rolify
