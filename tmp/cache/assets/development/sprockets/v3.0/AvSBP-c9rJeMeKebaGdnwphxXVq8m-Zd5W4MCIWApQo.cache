@@ -1,0 +1,11 @@
+I"j(function() {
+  document.ready(function() {
+    return $("#new_payment").on("ajax:success", function(e, data, status, xhr) {
+      return $("#new_payment").append("<p>Thank you!</p>");
+    }).on("ajax:error", function(e, xhr, status, error) {
+      return $("#new_payment").append("<p>Oops! There's been a mistake somewhere.</p>");
+    });
+  });
+
+}).call(this);
+:ET

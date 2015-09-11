@@ -1,0 +1,321 @@
+/* line 5, /Users/katerussell/katesapp2/app/assets/stylesheets/comments.scss */
+#comment_body.form-control {
+  height: 10em;
+  width: 100%;
+  resize: none;
+}
+
+/* line 11, /Users/katerussell/katesapp2/app/assets/stylesheets/comments.scss */
+.rating {
+  margin: 0.5em 0 1em 0;
+}
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 5, /Users/katerussell/katesapp2/app/assets/stylesheets/products.scss */
+.product-index {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 10, /Users/katerussell/katesapp2/app/assets/stylesheets/products.scss */
+.product-table {
+  width: 100%;
+}
+
+/* line 13, /Users/katerussell/katesapp2/app/assets/stylesheets/products.scss */
+.product-table th {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  border-bottom: 1px solid black;
+}
+
+/* line 19, /Users/katerussell/katesapp2/app/assets/stylesheets/products.scss */
+.product-table td {
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  vertical-align: top;
+  border-bottom: 1px solid black;
+}
+
+/* line 27, /Users/katerussell/katesapp2/app/assets/stylesheets/products.scss */
+.table-responsive {
+  border: none;
+}
+
+/* line 31, /Users/katerussell/katesapp2/app/assets/stylesheets/products.scss */
+.product-show {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 36, /Users/katerussell/katesapp2/app/assets/stylesheets/products.scss */
+.product-image img {
+  z-index: 1000;
+  width: 100%;
+}
+/* line 1, /Users/katerussell/katesapp2/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/katerussell/katesapp2/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/katerussell/katesapp2/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: white;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/katerussell/katesapp2/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 23, /Users/katerussell/katesapp2/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, /Users/katerussell/katesapp2/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 34, /Users/katerussell/katesapp2/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 39, /Users/katerussell/katesapp2/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 43, /Users/katerussell/katesapp2/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 49, /Users/katerussell/katesapp2/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 56, /Users/katerussell/katesapp2/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 66, /Users/katerussell/katesapp2/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 4, /Users/katerussell/katesapp2/app/assets/stylesheets/static_pages.scss */
+h1 {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 1.2em;
+}
+
+/* line 8, /Users/katerussell/katesapp2/app/assets/stylesheets/static_pages.scss */
+.row {
+  background-color: transparent;
+  font-size: 1.2em;
+}
+
+/* line 12, /Users/katerussell/katesapp2/app/assets/stylesheets/static_pages.scss */
+p {
+  margin: 1em 10% 0 10%;
+  background-color: D3D3D3;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+/* line 19, /Users/katerussell/katesapp2/app/assets/stylesheets/static_pages.scss */
+.navbar li {
+  padding: 1em 1em 1em 0;
+}
+
+/* line 23, /Users/katerussell/katesapp2/app/assets/stylesheets/static_pages.scss */
+body {
+  margin: 10%;
+  font-size: 16px;
+  line-height: 150%;
+}
+img[data-action="zoom"] {
+  cursor: pointer;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+}
+.zoom-img,
+.zoom-img-wrap {
+  position: relative;
+  z-index: 666;
+  -webkit-transition: all 300ms;
+       -o-transition: all 300ms;
+          transition: all 300ms;
+}
+img.zoom-img {
+  cursor: pointer;
+  cursor: -webkit-zoom-out;
+  cursor: -moz-zoom-out;
+}
+.zoom-overlay {
+  z-index: 420;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  filter: "alpha(opacity=0)";
+  opacity: 0;
+  -webkit-transition:      opacity 300ms;
+       -o-transition:      opacity 300ms;
+          transition:      opacity 300ms;
+}
+.zoom-overlay-open .zoom-overlay {
+  filter: "alpha(opacity=100)";
+  opacity: 1;
+}
+.zoom-overlay-open,
+.zoom-overlay-transitioning {
+  cursor: default;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+/* line 17, /Users/katerussell/katesapp2/app/assets/stylesheets/application.css.scss */
+ul li {
+  list-style-type: none;
+}
+
+/* line 20, /Users/katerussell/katesapp2/app/assets/stylesheets/application.css.scss */
+.carousel-caption {
+  font-size: 2em;
+  color: black;
+  font: arial;
+}
+
+/* line 25, /Users/katerussell/katesapp2/app/assets/stylesheets/application.css.scss */
+p, body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+/* line 30, /Users/katerussell/katesapp2/app/assets/stylesheets/application.css.scss */
+table {
+  background-color: lightgrey;
+  font-size: 1em;
+}
+
+/* line 34, /Users/katerussell/katesapp2/app/assets/stylesheets/application.css.scss */
+th {
+  font-size: 1em;
+  padding-right: 1em;
+}
+
+/* line 38, /Users/katerussell/katesapp2/app/assets/stylesheets/application.css.scss */
+td {
+  font-size: .75em;
+}
+
+/* line 41, /Users/katerussell/katesapp2/app/assets/stylesheets/application.css.scss */
+.rated {
+  width: 150px;
+  margin: 0 0 0 10%;
+}
+
+/* line 45, /Users/katerussell/katesapp2/app/assets/stylesheets/application.css.scss */
+#comment_body.form-control {
+  height: 10em;
+  width: 60%;
+  resize: none;
+}
+
+/* line 51, /Users/katerussell/katesapp2/app/assets/stylesheets/application.css.scss */
+.rating {
+  margin: 0.5em 0 1em 0;
+  width: 150px;
+}
