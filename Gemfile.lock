@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/stripe/stripe-ruby
-  revision: e09dab7d2eab98a50bf7295d6c0007ad77a9c6ae
+  revision: f56c486fa147b9c48f05b4c37e9a6f4ceac52b2e
   specs:
-    stripe (1.25.0)
+    stripe (1.26.0)
       json (~> 1.8.1)
       rest-client (~> 1.4)
 
@@ -202,9 +202,23 @@ GEM
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     rdoc (4.2.0)
-    redis (2.2.2)
-    redis-store (1.0.0.1)
-      redis (~> 2.2.1)
+    redis (3.2.1)
+    redis-actionpack (4.0.1)
+      actionpack (~> 4)
+      redis-rack (~> 1.5.0)
+      redis-store (~> 1.1.0)
+    redis-activesupport (4.1.1)
+      activesupport (~> 4)
+      redis-store (~> 1.1.0)
+    redis-rack (1.5.0)
+      rack (~> 1.5)
+      redis-store (~> 1.1.0)
+    redis-rails (4.0.0)
+      redis-actionpack (~> 4)
+      redis-activesupport (~> 4)
+      redis-store (~> 1.1.0)
+    redis-store (1.1.6)
+      redis (>= 2.2)
     request_store (1.2.0)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
@@ -309,7 +323,7 @@ DEPENDENCIES
   rails
   rails_12factor
   ratyrate
-  redis-store (~> 1.0.0)
+  redis-rails
   rolify
   rspec-rails
   sass-rails
