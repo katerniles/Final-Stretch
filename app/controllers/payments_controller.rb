@@ -1,25 +1,30 @@
-class PaymentsController < ApplicationController
-
+class ChargesController < ApplicationController
+  def new
+    # this will remain empty unless you need to set some instance variables to pass on
+  end
+ 
   def create
-    token = params[:stripeToken]
-    @product = Product.find(params[:product_id])
-    @user = current_user
-    # Create the charge on Stripe's servers - this will charge the user's card
-    begin
-      charge = Stripe::Charge.create(
-        :amount => (@product.price * 100).to_i,
-        :currency => "usd",
-        :source => token,
-        :description => "The very best product!"
-        #:name => "<%= @product.name %>"
-      )
-    rescue Stripe::CardError => e
-      # The card has been declined
-      body = e.json_body
-      err = body[:error]
-      flash[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
-    end
-    redirect_to product_path(@product)
-    UserMailer.confirmation_mail(@user, @product).deliver
+    # Amount in cents
+    amount = params[:stripeAmount].to_i * 100
+ 
+    # Create the customer in Stripe
+    customer = Stripe::Customer.create(
+      email: params[:stripeEmail],
+      card: params[:stripeToken]
+    )
+ 
+    # Create the charge using the customer data returned by Stripe API
+    charge = Stripe::Charge.create(
+      customer: customer.id,
+      amount: amount,
+      description: 'Rails Stripe customer',
+      currency: 'usd'
+    )
+ 
+    # place more code upon successfully creating the charge
+  rescue Stripe::CardError => e
+    flash[:error] = e.message
+    redirect_to charges_path
+    flash[:notice] = "Please try again"
   end
 end

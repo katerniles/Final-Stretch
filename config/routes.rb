@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :users
   resources :products do
   resources :comments
+  resources :charges
   end
   resources :payments, only: [:create]    
   resources :orders, only: [:index, :show, :new, :create]
