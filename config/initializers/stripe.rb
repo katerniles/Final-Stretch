@@ -1,3 +1,1 @@
-Stripe.api_key = Rails.env.production? ?
-                 Rails.configuration.stripe[:secret_key] :
-                 Settings[Rails.env]['stripe']['secret_key']
+Stripe.api_key = Rails.application.secrets.stripe_secret_key
